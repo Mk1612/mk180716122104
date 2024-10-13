@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7e6f0; /* A soft pink background for a love-themed aesthetic */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Georgia', serif;
+  color: #e84a5f; /* A vibrant love-themed color */
+}
+
+/* Center the button */
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Style the Home button */
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e84a5f; /* Red color */
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+.home-button:hover {
+    background-color: #d73c4f; /* Darker red on hover */
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Memory Entry Styling */
+.memory-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Reverse layout for odd entries */
+.memory-entry:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.text-side {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.image-side {
+  width: 40%;
+}
+
+.small-image {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .memory-entry {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text-side, .image-side {
+    width: 100%;
+    padding-right: 0; /* Remove padding on smaller screens */
+  }
+
+  .section-heading {
+    font-size: 2rem; /* Reduce size for smaller screens */
+  }
+
+  .home-button {
+    font-size: 1rem;
+    padding: 8px 16px; /* Adjust button size for mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller text for better fit */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .memory-entry {
+    margin: 1rem 0; /* Reduce margin for very small screens */
+  }
+
+  .home-button {
+    font-size: 0.9rem;
+    padding: 7px 14px; /* Further adjust button size for small screens */
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  p {
+    font-size: 0.85rem; /* Reduce paragraph font size on extra small screens */
+  }
+}

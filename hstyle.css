@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full-height coverage */
+    color: #333; /* Default text color for better contrast */
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: left; /* Better readability with left alignment */
+    animation: fadeIn 1.5s ease-in-out;
+    overflow-y: auto; /* Ensures the container is scrollable if content overflows */
+    max-height: 90vh; /* Limits the height */
+    box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Heading */
+.heart h1 {
+    color: #e63946;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the main heading */
+}
+
+/* Paragraph styling */
+.heart p {
+    font-size: 20px; /* Increased font size for better readability */
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Highlighted second paragraph */
+.heart p:nth-child(2) {
+    color: #a81c34;
+    font-weight: bold;
+    font-size: 22px; /* Slightly larger font for emphasis */
+}
+
+/* Last paragraph */
+.heart p:last-child {
+    color: #1d3557;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 30px;
+    border-top: 2px solid #e63946;
+    padding-top: 20px;
+}
+
+/* Centered button section */
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Home button styling */
+.home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e84a5f; /* Red color */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Hover effect for button */
+.home-button:hover {
+    background-color: #d73c4f; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* More fluid design on smaller screens */
+        padding: 20px;
+    }
+
+    .heart h1 {
+        font-size: 28px;
+    }
+
+    .heart p {
+        font-size: 18px;
+    }
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Less padding for very small screens */
+    }
+
+    .heart h1 {
+        font-size: 24px; /* Smaller heading on mobile */
+    }
+
+    .heart p {
+        font-size: 16px; /* Adjust paragraph font size */
+        line-height: 1.6; /* Slightly tighter line spacing */
+    }
+
+    .home-button {
+        padding: 10px 20px; /* Adjust button size for mobile */
+        font-size: 1rem;
+    }
+
+    .container {
+        max-height: none; /* Allow scrolling without max-height restriction on small screens */
+    }
+}

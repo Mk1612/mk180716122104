@@ -1,0 +1,124 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    background-color: #f9f6f2; /* Light beige background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+}
+
+.container {
+    background-color: #fff; /* White container */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Use 90% width for better responsiveness */
+    max-width: 800px;
+    border: 1px solid #d0c9b4; /* Soft border */
+    position: relative; /* For positioning elements */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #c27ba0; /* Soft pink color */
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d0c9b4; /* Underline effect */
+    padding-bottom: 10px; /* Spacing under the heading */
+}
+
+.heart {
+    text-align: left; /* Align text to the left */
+}
+
+.heart p {
+    font-size: 1.1rem; /* Slightly larger paragraph font */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Space above the button */
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 24px; /* Slightly larger button size */
+    background-color: #e4b7a0; /* Vintage pink color */
+    color: white;
+    text-align: center;
+    font-size: 1.1rem; /* Button text size */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation effects */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.home-button:hover {
+    background-color: #d49c87; /* Darker pink on hover */
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+/* Add a decorative element */
+.container:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #e4b7a0, #c27ba0, #e4b7a0); /* Decorative gradient */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    transform: translateX(-50%);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px; /* Reduced padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .heart p {
+        font-size: 1rem; /* Slightly smaller paragraph font */
+    }
+
+    .home-button {
+        padding: 10px 20px; /* Reduced button padding for smaller screens */
+        font-size: 1rem; /* Adjust font size for the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Further reduced padding for very small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Further reduced heading size */
+    }
+
+    .heart p {
+        font-size: 0.9rem; /* Even smaller paragraph font */
+    }
+
+    .home-button {
+        padding: 8px 16px; /* Further reduced button padding */
+        font-size: 0.9rem; /* Smaller button text size */
+    }
+}

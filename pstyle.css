@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #ff4081; /* Pink color for headings */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* Floral background images */
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    width: 120px; /* Increased size for better visibility */
+    height: 120px;
+    background-image: url('purple-osteospermum-daisy-flower.jpg'); /* Replace with your floral image URL */
+    background-size: cover;
+    opacity: 0.5; /* Slightly transparent for subtle effect */
+}
+
+.container::before {
+    top: -20px;
+    left: -20px;
+}
+
+.container::after {
+    bottom: -20px;
+    right: -20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduced padding for small screens */
+        margin: 30px 10px; /* Narrow margins */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1rem; /* Smaller font size for readability */
+    }
+
+    .container::before,
+    .container::after {
+        width: 80px; /* Reduced size for floral images on smaller screens */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 20px 5px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Further smaller font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container::before,
+    .container::after {
+        width: 60px; /* Floral images smaller on very small screens */
+        height: 60px;
+    }
+}
