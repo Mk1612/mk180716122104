@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2b1a1a;
+  color: #ffdddd;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #7b1111;
+  color: #ffffff;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Message Section Styling */
+.message-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-content {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #440000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  color: #ffcccc;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.text-content em {
+  font-size: 1.1em;
+  color: #ffdada;
+}
+
+/* Image Styling */
+.image-content {
+  margin-top: 20px;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+/* Button Section Styling */
+.button-section {
+  margin-top: 30px;
+}
+
+.proposal-button {
+  display: inline-block;
+  background-color: #7b1111;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.proposal-button:hover {
+  background-color: #aa3333;
+}
