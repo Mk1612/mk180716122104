@@ -108,3 +108,18 @@ p {
         height: 60px;
     }
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This makes the container take full viewport height */
+}
+
+.image-container img {
+    transition: 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.image-container img:hover {
+    filter: brightness(1.2); /* Lightens the image when hovered */
+}
+
